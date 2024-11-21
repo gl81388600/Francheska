@@ -1,49 +1,55 @@
+/* Estilo general */
 body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #ffe7e0, #ffcad4);
-  color: #4a4a4a;
+  background: linear-gradient(to bottom, #ffdde1, #fecaca);
+  color: #333;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
   text-align: center;
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  animation: fadeIn 2s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
 h1 {
   font-size: 2.5em;
-  color: #e63946;
-  margin-bottom: 20px;
+  color: #d64550;
+  margin-bottom: 15px;
 }
 
 .poem {
   font-size: 1.2em;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #555;
 }
 
 .signature {
-  margin-top: 30px;
+  margin-top: 20px;
   font-style: italic;
-  color: #7f7f7f;
+  color: #7a7a7a;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
+/* Diseño responsivo para pantallas más pequeñas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+
+  .poem {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 15px;
   }
 }
